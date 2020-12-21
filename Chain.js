@@ -19,8 +19,8 @@ class Chain {
         this.chain.bodyA = null;
     }
 
-    attach(body) {
-        this.chain.bodyA = body;
+    attach(body){
+        this.sling.bodyA=body;
     }
 
     display() {
