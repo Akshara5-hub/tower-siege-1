@@ -146,14 +146,15 @@ function draw() {
 
 
 function mouseDragged() {
-
   Matter.Body.setPosition(this.ball, {x: mouseX , y: mouseY});
-
 }
 
 
 function mouseReleased() {
-
   chain.fly();
-
 }
+
+function keyPressed(){
+  if(keyCode === 32){
+      chain1.attach(this.polygon);
+  }
